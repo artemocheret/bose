@@ -1,0 +1,26 @@
+.faq__title {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-titles);
+}
+.num__text {
+  font-family: var(--font-logo);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 70%;
+  color: var(--color-text-titles);
+}
+.grup__title {
+  font-size: 14px;
+  line-height: 125%;
+  color: var(--color-text-primary);
+}
+.button__about {
+  background-color: var(--color-text-titles);
+  width: 32px;
+  height: 32px;
+}
