@@ -1,8 +1,101 @@
-.header {
+.header__container {
+  background-color: var(--color-bg-primary);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 32px;
+}
+
+.logo {
+  width: 100px;
+  height: 12px;
 }
 
 .nav__item {
   font-size: 16px;
+}
+
+.menu-btn {
+  position: relative;
+  display: block;
+  z-index: 9;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+}
+
+.menu-btn::before,
+.menu-btn::after {
+  content: '';
+}
+//верхня, середня та нижня лінії
+.menu-btn::before,
+.menu-btn__line,
+.menu-btn::after {
+  width: 100%;
+  height: 2px;
+  background-color: #030303;
+  position: absolute;
+  right: 0;
+  transition: 0.5s linear;
+  transition-property: top, transform;
+}
+
+// Верхня лінія
+.menu-btn::before {
+  top: 0;
+}
+// Середня лінія
+.menu-btn__line {
+  top: calc(50% - 1px);
+}
+// Нижня лінія
+.menu-btn::after {
+  top: calc(100% - 2px);
+}
+
+.menu-btn.is-open {
+  &::before {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+  .menu-btn__line {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+  &::after {
+    top: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+}
+
+.mobile-menu__wrapp {
+  background-color: #ffffff;
+  position: fixed;
+  inset: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transform: translateX(-100%);
+  transition: transform 0.5s linear;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu__wrapp.is-open {
+  transform: translateX(0);
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    display: block;
+  }
 }

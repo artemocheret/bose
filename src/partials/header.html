@@ -1,13 +1,22 @@
 <header class="header">
-    <div class="header__container container">
-        <a href="../images/logo-bose.svg" class="logo"></a>
+  <div class="header__container container">
+    <a href="" class="logo">
+      <img class="logo" src="./images/logo-bose.svg" alt="">
+    </a>
+    <div class="mobile-menu">
+      <button class="mobile-menu__btn menu-btn" data-menu-btn>
+        <span class="menu-btn__line"></span>
+      </button>
+      <div class="mobile-menu__wrapp" data-menu>
         <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">Characteristics</li>
-                <li class="nav__item">History</li>
-                <li class="nav__item">Reviews</li>
-                <li class="nav__item">Payment and delivery</li>
-            </ul>
+          <ul class="nav__list">
+            <li class="nav__item" data-mobile-link>Characteristics</li>
+            <li class="nav__item" data-mobile-link>History</li>
+            <li class="nav__item" data-mobile-link>Reviews</li>
+            <li class="nav__item" data-mobile-link>Payment and delivery</li>
+          </ul>
         </nav>
+      </div>
     </div>
+  </div>
 </header>
