@@ -1,10 +1,13 @@
 @import './common';
 @import './utils/variables';
+@import './utils/mixin';
+@import './utils/placeholder';
 @import './global/reset';
 @import './global/global';
 @import './global/container';
 // компоненты
-@import './components/buttons';
+@import './components/';
 @import './components/header';
 @import './components/hero';
+
 @import './components/faq';
