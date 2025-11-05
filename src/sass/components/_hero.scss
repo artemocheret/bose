@@ -1,10 +1,18 @@
+.hero {
+  padding-top: 35px;
+}
 .hero__container {
   padding-right: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 32px;
 }
-
+.hero__text-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .hero__text {
   font-size: 14px;
   font-weight: 100;
@@ -22,4 +30,49 @@
 .hero__photo {
   min-width: 280px;
   min-height: 240px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hero__container {
+    padding-right: 0x;
+    flex-direction: row;
+    gap: 60px;
+  }
+  .hero__button {
+    width: 295px;
+  }
+  .hero__text-info {
+    gap: 40px;
+  }
+  .hero__list {
+    max-width: 250px;
+    flex-grow: 0.5;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 70px;
+  }
+  .hero__text-info {
+    position: relative;
+    width: auto;
+  }
+  .hero__list {
+    position: absolute;
+    left: 0;
+  }
+  .hero__title {
+    padding-top: 210px;
+    width: 480px;
+  }
+  .hero__button {
+    width: 400px;
+  }
 }
