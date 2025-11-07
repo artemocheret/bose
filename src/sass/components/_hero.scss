@@ -26,7 +26,10 @@
   text-transform: uppercase;
   color: var(--color-text-titles);
 }
-
+.hero__button:hover {
+  background-color: var(--color-bg-button_hover);
+  color: var(--color-text-button_hover);
+}
 .hero__photo {
   min-width: 280px;
   min-height: 240px;

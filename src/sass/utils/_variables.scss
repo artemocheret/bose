@@ -1,11 +1,14 @@
 :root {
   --font-primary: 'Gilroy';
   --font-logo: 'Roboto Condensed';
-  --color-text-primary: #ffffffcc;
-  --color-text-secondary: #ffffff;
-  --color-bg-primary: #191919;
-  --color-bg-secondary: #f5f4fa;
-  --color-text-titles: #e7e7e7;
-  --color-text-white10: #ffffff1a;
-  --color-bg-button: #df3d3a;
+  --color-text-primary: rgba(255, 255, 255, 0.8);
+  --color-text-secondary: rgb(255, 255, 255);
+  --color-bg-primary: rgb(25, 25, 25);
+  --color-bg-secondary: rgb(245, 244, 250);
+  --color-text-titles: rgb(231, 231, 231);
+  --color-text-white10: rgba(255, 255, 255, 0.102);
+  --color-bg-button: rgb(223, 61, 58);
+  --color-bg-button_hover: rgb(181, 48, 45);
+  --color-text-button_hover: rgba(255, 255, 255, 0.9);
+  --color-text-modal: rgba(255, 255, 255, 0.3);
 }
