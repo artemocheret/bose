@@ -1,0 +1,67 @@
+<section class="order">
+  <div class="container__left">
+    <h2 class="order__title">bose nc 700</h2>
+    <div class="order__photo">
+      <img
+        class="order__img"
+        src="/src/images/order_mobil_black.jpg"
+        alt="headphone"
+      />
+      <img
+        class="order__img is__hidden--headphone"
+        src="/src/images/order_mobil_black.jpg"
+        alt="headphone"
+      />
+    </div>
+    <ul class="order__list">
+      <li class="order__item">
+        <p class="order__text">Availability in stores</p>
+        <a href="#" class="order__link"></a>
+      </li>
+      <li class="order__item">
+        <p class="order__text">Characteristics</p>
+        <a href="#" class="order__link"></a>
+      </li>
+      <li class="order__item">
+        <p class="order__text">Payment and delivery methods</p>
+        <a href="#" class="order__link"></a>
+      </li>
+    </ul>
+    <p class="order__price">14 999 UAH</p>
+    <button class="order__button">order</button>
+    <!-- modal -->
+    <div data-order_modal class="backdrop is__hidden--modal">
+      <div class="modal">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input type="text" class="modal__input" placeholder="Empty" />
+          </li>
+          <li class="modal__item">
+            <input
+              type="email"
+              class="modal__input modal__input--need"
+              placeholder="Empty"
+            />
+          </li>
+          <li class="modal__item">
+            <input
+              type="text"
+              class="modal__input modal__input--need"
+              placeholder="Empty"
+            />
+          </li>
+          <li class="modal__item modal__item">
+            <input type="checkbox" class="modal__input--checkbox" />
+            <p class="modal__text">
+              I agree to the
+              <a class="modal__link" href="#">privacy policy</a>
+            </p>
+          </li>
+        </ul>
+        <button class="button modal__button" data-order_modal-close>
+          send
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
