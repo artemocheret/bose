@@ -1,4 +1,11 @@
 @import './common';
+<<<<<<< HEAD
+@import "./global/reset";
+@import "./global/global";
+@import "./utils/variables";
+@import "./components/container";
+@import "./components/header";
+=======
 @import './utils/variables';
 @import './utils/mixin';
 @import './utils/placeholder';
@@ -11,3 +18,4 @@
 @import './components/hero';
 @import './components/modal';
 @import './components/faq';
+>>>>>>> main
