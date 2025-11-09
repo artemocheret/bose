@@ -1,0 +1,76 @@
+.advantages {
+  background-color: var(--color-bg-primary);
+}
+
+.advantages__title {
+  color: var(--color-text-title);
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.advantages__item {
+  font-size: 14px;
+}
+
+.advantages__item::before {
+  content: '';
+  background-image: url(../images/red-circle.svg);
+  width: 13px;
+  height: 13px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 24px;
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  .advantages__title {
+    font-size: 32px;
+  }
+
+  .advantages__list {
+    align-items: flex-start;
+  }
+
+  .advantages__item {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantages__item::before {
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .advantages__title {
+    font-size: 54px;
+  }
+  
+  .advantages__list {
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .advantages__item {
+    font-size: 20px;
+    flex-basis: calc((100% - 220px) / 2);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantages__item::before {
+    margin-right: 24px;
+  }
+}
