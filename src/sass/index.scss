@@ -1,2 +1,13 @@
 @import './common';
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/placeholder';
+@import './global/reset';
+@import './global/global';
+@import './global/container';
+// @import './components/buttons';
+@import './components/header';
+// @import './components/hero';
+// @import './components/advantages';
+@import './components/faq';
 @import './components/footer';
