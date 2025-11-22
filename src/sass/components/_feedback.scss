@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.feedback {
+  background: #111111;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.feedback__hero {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.feedback__hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.feedback__inner {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+.feedback__title {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: 1px;
+}
+
+.feedback__lead {
+  color: #cccccc;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 400px;
+}
+
+.feedback__form {
+  width: 100%;
+}
+
+.feedback__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__item {
+  border-bottom: 1px solid #333333;
+  padding: 20px 0;
+}
+
+.feedback__label-text {
+  display: block;
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.feedback__input,
+.feedback__textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0;
+  font-family: inherit;
+}
+
+.feedback__input:focus,
+.feedback__textarea:focus {
+  outline: none;
+}
+
+.feedback__textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.feedback__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #cccccc;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.feedback__link {
+  color: #cccccc;
+  text-decoration: underline;
+}
+
+.feedback__btn {
+  margin-top: 40px;
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 1px solid #5a1a1a;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.feedback__btn:hover {
+  background: #5a1a1a;
+  border-color: #5a1a1a;
+}
+
+@media (min-width: 900px) {
+  .feedback__hero {
+    height: 400px;
+  }
+
+  .feedback__inner {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 100px;
+    align-items: start;
+    padding: 80px 0;
+  }
+
+  .feedback__title {
+    font-size: 32px;
+  }
+}
