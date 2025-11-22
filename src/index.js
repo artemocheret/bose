@@ -1,2 +1,2 @@
-import './order_photo';
-import './order_modal';
+import './js/order_photo';
+import './js/order_modal';

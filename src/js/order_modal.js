@@ -1,6 +1,6 @@
-const openBtn = document.querySelector('[data-modal-open]');
-const modal = document.querySelector('[data-modal]');
-const closeBtn = document.querySelector('[data-modal-close]');
+const openBtn = document.querySelector('[data-order_modal-open]');
+const modal = document.querySelector('[data-order_modal]');
+const closeBtn = document.querySelector('[data-order_modal-close]');
 
 const handleToggleModal = () => {
   modal.classList.toggle('is-hidden');

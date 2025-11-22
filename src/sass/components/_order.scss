@@ -1,27 +1,55 @@
-.order__photo.is__hidden {
-  opacity: 0;
-  position: absolute;
+.order__container-left {
+  display: flex;
+  gap: 150px;
+  padding-top: 50px;
+  padding-right: 20px;
 }
 
-.container__left {
-  padding-top: 50px;
-  padding-left: 20px;
+.toggle-slider {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.order__slider-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+.order-slider__item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order__slider-photo {
+  min-width: 280px;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 50%;
+}
+
+.order__slider-photo--white {
+  left: 210%;
+}
+.order__text-content {
+  width: 400px;
 }
 .order__title {
+  order: -1;
   font-weight: 600;
+  padding-bottom: 32px;
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-text-titles);
 }
-.order__photo {
-  padding-bottom: 30px;
-}
-
 .order__button-list {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 25px;
   padding-bottom: 32px;
@@ -81,10 +109,46 @@
   background-size: contain;
 }
 .order__price {
+  padding-top: 32px;
+  padding-bottom: 24px;
   color: var(--color-bg-button);
   font-weight: 600;
   font-size: 30px;
   line-height: 120%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+.order__button:hover {
+  background-color: var(--color-bg-button_hover);
+  color: var(--color-text-button_hover);
+}
+
+@media (min-width: 768px) {
+  .order__slider-photo {
+    min-width: 648px;
+  }
+  .order__slider-photo--white {
+    left: 63%;
+  }
+}
+@media (min-width: 1200px) {
+  .toggle-slider {
+    order: 3;
+  }
+  .order__slider-photo {
+    min-width: 700px;
+  }
+  .order__slider-photo--white {
+    left: 45%;
+  }
+  .order__title {
+    padding-bottom: 50px;
+  }
+  .order__button-list {
+    padding-bottom: 50px;
+  }
+  .order__price {
+    padding-top: 50px;
+    padding-bottom: 32px;
+  }
 }
