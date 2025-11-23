@@ -1,0 +1,14 @@
+.button {
+  background-color: var(--color-bg-button);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.9;
+  width: 280px;
+  height: 58px;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
