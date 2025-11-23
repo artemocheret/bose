@@ -4,20 +4,13 @@
 @import './utils/placeholder';
 @import './global/reset';
 @import './global/global';
-@import './global/container';
-// @import './components/buttons';
-@import './components/header';
-// @import './components/hero';
-// @import './components/advantages';
-@import './components/faq';
-@import './components/footer';
-@import './components/feedback';
-@import './components/container';
-// компоненты
 @import './components/buttons';
+@import './components/container';
+@import './components/modal';
 @import './components/header';
 @import './components/hero';
 @import './components/design';
 @import "./components/advantages";
-@import './components/modal';
 @import './components/faq';
+@import './components/feedback';
+@import './components/footer';
