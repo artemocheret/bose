@@ -8,4 +8,7 @@
   opacity: 0.9;
   width: 280px;
   height: 58px;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }

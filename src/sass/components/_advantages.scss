@@ -1,5 +1,7 @@
 .advantages {
   background-color: var(--color-bg-primary);
+  padding-top: 128px;
+  padding-bottom: 100px;
 }
 
 .advantages__title {
@@ -56,16 +58,18 @@
 @media (min-width: 1024px) {
   .advantages__title {
     font-size: 54px;
+    margin-bottom: 50px;
   }
   
   .advantages__list {
     gap: 20px;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .advantages__item {
     font-size: 20px;
-    flex-basis: calc((100% - 220px) / 2);
+    flex-basis: calc((100% - 20px) / 2);
     display: flex;
     flex-direction: row;
   }

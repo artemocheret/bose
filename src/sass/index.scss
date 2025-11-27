@@ -4,11 +4,14 @@
 @import './utils/placeholder';
 @import './global/reset';
 @import './global/global';
-@import './global/container';
 @import './components/buttons';
+@import './components/container';
+@import './components/modal';
 @import './components/header';
 @import './components/hero';
+@import './components/design';
 @import "./components/advantages";
 @import './components/faq';
-@import './components/guarantees';
-
+@import './components/order';
+@import './components/feedback';
+@import './components/footer';
