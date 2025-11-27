@@ -1,15 +1,20 @@
 @import './common';
-
 @import './utils/variables';
 @import './utils/mixin';
 @import './utils/placeholder';
 @import './global/reset';
 @import './global/global';
-@import './components/container';
-// компоненты
 @import './components/buttons';
+@import './components/container';
+@import './components/modal';
 @import './components/header';
 @import './components/hero';
 @import './components/reviews';
 @import './components/faq';
 @import './components/modal';
+@import './components/design';
+@import "./components/advantages";
+@import './components/faq';
+@import './components/order';
+@import './components/feedback';
+@import './components/footer';
