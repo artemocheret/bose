@@ -28,7 +28,11 @@
   text-transform: uppercase;
   color: var(--color-text-titles);
 }
-
+.hero__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero__button:hover {
   background-color: var(--color-bg-button_hover);
   color: var(--color-text-button_hover);
