@@ -1,6 +1,5 @@
 .container__right {
   padding-left: 20px;
-  position: relative;
 }
 .reviews__container {
   padding-top: 52px;
@@ -25,7 +24,6 @@
 .toggle-slider__list {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  gap: 100%;
 }
 .toggle-slider__item {
   display: flex;
@@ -72,11 +70,18 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+  .reviews__content {
+    display: flex;
+    flex-direction: column;
+  }
   .toggle-slider__item {
-    justify-content: center;
+    justify-content: flex-start;
   }
   .video {
     max-width: 920px;
+  }
+  .video__video {
+    height: 420px;
   }
 }
 @media (min-width: 1200px) {
@@ -84,30 +89,25 @@
     padding-left: 0;
     padding-right: 112px;
   }
-  .reviews__title {
-    position: absolute;
-    top: 50px;
-    left: 500px;
+  .reviews__video-carusel {
+    min-width: 1328px;
   }
   .reviews__content {
-    display: flex;
+    flex-direction: row;
+  }
+  .reviews__list {
     position: relative;
+    right: 50%;
   }
   .video {
-    position: relative;
     display: flex;
     gap: 150px;
     min-width: 1030px;
   }
+  .video__video {
+    height: 590px;
+  }
   .video__text-grup {
     width: 260px;
-  }
-  .reviews__list {
-    position: absolute;
-    right: 55px;
-  }
-  .video__text-grup {
-    position: absolute;
-    top: 100px;
   }
 }
