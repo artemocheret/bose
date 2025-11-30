@@ -124,6 +124,10 @@
     justify-content: center;
     gap: 32px;
   }
+  .history__text--third {
+    position: relative;
+    top: -20%;
+  }
   .history__text--title::before {
     height: 77px;
     padding-bottom: 52px;
@@ -138,6 +142,5 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 125px;
   }
 }
