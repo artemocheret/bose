@@ -1,0 +1,146 @@
+.container__left {
+  padding: 52px 20px 0;
+}
+.history__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.history__first-adaptive {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.history__title {
+  order: -99;
+  color: var(--color-text-titles);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: '';
+    background-image: url(../images/Union.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 82px;
+  }
+}
+
+.history__text-content {
+  display: flex;
+  flex-direction: column;
+}
+.history__text--first {
+  position: absolute;
+  top: 124px;
+}
+.history__photo--plan {
+  padding-top: 70%;
+  order: -1;
+}
+.history__text {
+  font-size: 14px;
+}
+.history__photo {
+  min-width: 280px;
+  padding-bottom: 32px;
+}
+.history__about {
+  font-size: 14px;
+  line-height: 125%;
+  color: var(--color-text-white40);
+}
+.history__text--title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  &::before {
+    display: block;
+    padding-bottom: 25px;
+    content: '';
+    background-image: url(../images/’’.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 34px;
+    height: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .history__title::after {
+    content: none;
+  }
+  .history__first-adaptive {
+    display: flex;
+    width: 100%;
+  }
+  .history__text-content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  .history__title {
+    width: 155px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+  .history__text {
+    min-width: 290px;
+    width: 50%;
+  }
+  .history__text--first {
+    order: -1;
+    position: relative;
+    top: -32px;
+  }
+  .history__photo {
+    max-width: 355px;
+  }
+  .history__photo--plan {
+    padding-top: 0;
+    position: relative;
+    right: -100%;
+    transform: translateX(-100%);
+  }
+
+  .history__text--second {
+    order: -1;
+  }
+  .history__seconde-adaptive {
+    display: flex;
+    gap: 58px;
+  }
+  .history__text-content--seconde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+  .history__text--third {
+    position: relative;
+    top: -20%;
+  }
+  .history__text--title::before {
+    height: 77px;
+    padding-bottom: 52px;
+  }
+}
+@media (min-width: 1200px) {
+  .history__seconde-adaptive {
+    display: flex;
+    gap: 260px;
+  }
+  .history__text-content--seconde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
