@@ -97,9 +97,14 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .mobile-menu__btn {
-    display: none;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mobile-menu__wrapp {
+    max-height: 367px;
+    transform: translateY(-100%);
+  }
+
+  .mobile-menu__wrapp.is-open {
+    transform: translateY(0);
   }
 }
 
@@ -110,15 +115,8 @@
     align-items: center;
     gap: 77px;
   }
-}
 
-@media (min-width: 768px) {
-  .mobile-menu__wrapp {
-    transform: translateY(-100%);
-    height: 367px;
-  }
-
-  .mobile-menu__wrapp.is-open {
-    transform: translateY(0);
+  .mobile-menu__btn {
+    display: none;
   }
 }
