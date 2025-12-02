@@ -1,0 +1,90 @@
+.bose {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.bose__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bose__title {
+  font-size: 24px;
+  color: var(--color-text-title);
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.bose__subtitle {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.bose__text {
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.bose__photo {
+  flex-basis: 280px;
+}
+
+@media (min-width: 768px) {
+  .bose__container {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .bose__title {
+    font-size: 30px;
+  }
+
+  .bose__text {
+    font-size: 16px;
+  }
+
+  .bose__content {
+    order: 1;
+    max-width: 294px;
+  }
+
+  .bose__photo {
+    order: 2;
+    flex-basis: 354px;
+  }
+
+  .bose__text {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bose__container {
+    flex-direction: row;
+    gap: 170px;
+  }
+
+  .bose__title {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+
+  .bose__subtitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .bose__text {
+    font-size: 20px;
+  }
+
+  .bose__content {
+    order: 1;
+    max-width: 380px;
+  }
+
+  .bose__photo {
+    order: 2;
+    flex-basis: 700px;
+  }
+}
