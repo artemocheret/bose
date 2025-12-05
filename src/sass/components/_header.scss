@@ -107,11 +107,11 @@
   .mobile-menu__wrapp {
     max-height: 367px;
     transform: translateY(-100%);
-    box-shadow: 0 20px 80px 0 #000000;
   }
 
   .mobile-menu__wrapp.is-open {
     transform: translateY(0);
+    box-shadow: 0 20px 80px 0 #000000;
   }
 }
 
