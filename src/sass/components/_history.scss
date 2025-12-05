@@ -11,7 +11,7 @@
 .history__first-adaptive {
   display: flex;
   flex-direction: column;
-  position: relative;
+  gap: 32px;
 }
 .history__title {
   order: -99;
@@ -37,21 +37,20 @@
 .history__text-content {
   display: flex;
   flex-direction: column;
+  gap: 32px;
 }
-.history__text--first {
-  position: absolute;
-  top: 124px;
-}
+
 .history__photo--plan {
-  padding-top: 70%;
   order: -1;
 }
 .history__text {
   font-size: 14px;
 }
+.history__text--first {
+  order: -1;
+}
 .history__photo {
   min-width: 280px;
-  padding-bottom: 32px;
 }
 .history__about {
   font-size: 14px;
@@ -73,49 +72,55 @@
     height: 50px;
   }
 }
+.history__seconde-adaptive {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.history__text-content--seconde {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 @media (min-width: 768px) {
+  .history__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 768px;
+  }
+  .history__title {
+    width: 155px;
+  }
   .history__title::after {
     content: none;
   }
   .history__first-adaptive {
-    display: flex;
     width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
   }
-  .history__text-content {
-    position: absolute;
-    left: 0;
-    top: 50%;
-  }
-  .history__title {
-    width: 155px;
-    position: absolute;
-    left: 0;
-    top: 10px;
-  }
+
   .history__text {
     min-width: 290px;
     width: 50%;
   }
-  .history__text--first {
+  .history__text--second {
     order: -1;
-    position: relative;
-    top: -32px;
+    padding-top: 85px;
+  }
+  .history__text--third {
+    padding-bottom: 133px;
   }
   .history__photo {
     max-width: 355px;
   }
-  .history__photo--plan {
-    padding-top: 0;
+  .history__photo--speacker {
     position: relative;
-    right: -100%;
-    transform: translateX(-100%);
-  }
-
-  .history__text--second {
-    order: -1;
+    bottom: -20%;
   }
   .history__seconde-adaptive {
-    display: flex;
+    flex-direction: row;
     gap: 58px;
   }
   .history__text-content--seconde {
@@ -124,10 +129,7 @@
     justify-content: center;
     gap: 32px;
   }
-  .history__text--third {
-    position: relative;
-    top: -20%;
-  }
+
   .history__text--title::before {
     height: 77px;
     padding-bottom: 52px;
@@ -142,5 +144,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .history__photo--plan {
+    min-width: 600px;
   }
 }

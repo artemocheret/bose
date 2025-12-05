@@ -1,7 +1,7 @@
 .order__container-left {
   display: flex;
   flex-direction: column;
-
+  padding-bottom: 88px;
   padding-top: 50px;
   padding-right: 20px;
 }
@@ -111,9 +111,16 @@
 @media (min-width: 768px) {
   .order__container-left {
     padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 100px;
   }
 }
 @media (min-width: 1200px) {
+  .order__container-left {
+    padding-right: 0;
+    padding-left: 187px;
+    padding-bottom: 170px;
+  }
   .order__content {
     gap: 150px;
     flex-direction: row-reverse;
