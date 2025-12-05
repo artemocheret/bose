@@ -11,6 +11,7 @@
 }
 
 .logo {
+  position: fixed;
   width: 100px;
   height: 12px;
   z-index: 10;
@@ -21,12 +22,17 @@
 }
 
 .menu-btn {
-  position: relative;
+  position: fixed;
   display: block;
   z-index: 9;
   width: 22px;
   height: 11px;
-  background-color: #030303;
+  background-color: transparent;
+  right: 20px;
+}
+
+.mobile-menu {
+  z-index: 9;
 }
 
 .menu-btn::before,
@@ -97,9 +103,15 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .mobile-menu__btn {
-    display: none;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mobile-menu__wrapp {
+    max-height: 367px;
+    transform: translateY(-100%);
+    box-shadow: 0 20px 80px 0 #000000;
+  }
+
+  .mobile-menu__wrapp.is-open {
+    transform: translateY(0);
   }
 }
 
@@ -109,5 +121,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 77px;
+  }
+
+  .mobile-menu__btn {
+    display: none;
   }
 }

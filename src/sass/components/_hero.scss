@@ -1,7 +1,12 @@
 .hero {
   padding-top: 35px;
 }
-
+.hero__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
 .hero__container {
   padding-right: 15px;
   display: flex;
@@ -27,8 +32,13 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-text-titles);
+  max-width: 290px;
 }
-
+.hero__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero__button:hover {
   background-color: var(--color-bg-button_hover);
   color: var(--color-text-button_hover);
