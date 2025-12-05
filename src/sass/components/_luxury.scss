@@ -1,7 +1,6 @@
 .luxury__content {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   gap: 32px;
 }
 .luxury__title {
@@ -17,15 +16,43 @@
 }
 .luxury__text-grup {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: 16px;
 }
 .luxury__text--first {
   padding-bottom: 42px;
 }
 @media (min-width: 768px) {
+  .luxury__title {
+    position: relative;
+    left: 60%;
+    width: 300px;
+  }
   .luxury__photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
     max-height: 293px;
+  }
+  .luxury__text--content {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+  }
+  .luxury__text-grup {
+    width: 300px;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .luxury__title {
+    position: relative;
+    left: 65%;
+  }
+  .luxury__photo {
+    max-height: 524px;
+  }
+  .luxury__text-grup {
+    width: 100%;
   }
 }
