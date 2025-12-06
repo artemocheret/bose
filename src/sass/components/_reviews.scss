@@ -20,6 +20,7 @@
 }
 .toggle-slider__list {
   display: flex;
+  align-items: center;
   transition: transform 0.5s ease-in-out;
 }
 .toggle-slider__item {
@@ -30,9 +31,7 @@
 .video {
   min-height: 300px;
 }
-.video__video {
-  aspect-ratio: 150 / 150;
-}
+
 .video__iframe {
   height: 100%;
 }
@@ -69,10 +68,9 @@
     display: flex;
     flex-direction: column;
   }
-  .toggle-slider__item {
-    justify-content: flex-start;
+  .video {
+    min-width: 100%;
   }
-
   .video__video {
     height: 420px;
   }
@@ -107,6 +105,7 @@
   }
   .video__video {
     height: 590px;
+    aspect-ratio: 150 / 150;
   }
   .video__text-grup {
     flex-grow: 1;
