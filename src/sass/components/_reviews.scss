@@ -98,6 +98,9 @@
     gap: 12px;
     bottom: 0;
   }
+  .toggle-slider__item {
+    justify-content: flex-start;
+  }
   .video {
     display: flex;
     gap: 150px;
