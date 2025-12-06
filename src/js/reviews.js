@@ -1,5 +1,5 @@
-const controls = document.querySelector('[data-slide-reviews-nav]');
-const slider = document.querySelector('[data-slide-reviews-container]');
+const controls = document.querySelector('[data-reviews-slide-nav]');
+const slider = document.querySelector('[data-reviews-slide-container]');
 
 const handleChancheSlide = event => {
   const target = event.target;

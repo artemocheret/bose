@@ -14,13 +14,17 @@
 .luxury__photo {
   width: 100%;
 }
+.luxury__text--content {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
 .luxury__text-grup {
+  flex-direction: column;
   display: flex;
   gap: 16px;
 }
-.luxury__text--first {
-  padding-bottom: 42px;
-}
+
 @media (min-width: 768px) {
   .luxury__title {
     position: relative;
@@ -35,13 +39,16 @@
     max-height: 293px;
   }
   .luxury__text--content {
+    flex-direction: row;
+    gap: 60px;
+  }
+  .luxury__text--content {
     display: flex;
     gap: 60px;
     justify-content: center;
   }
   .luxury__text-grup {
     width: 300px;
-    flex-direction: column;
   }
 }
 @media (min-width: 1200px) {
